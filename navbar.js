@@ -9,7 +9,7 @@ fetch('content.json')
         let activeButton = null; // Track the currently active button
 
         // Create navigation buttons
-        data.trucks.forEach(truck => {
+        data.trucks.forEach((truck, index) => {
             const button = document.createElement('button');
             button.textContent = truck.name;
             button.className = 'nav-button';
@@ -21,8 +21,16 @@ fetch('content.json')
                 button.classList.add('active');
                 activeButton = button;
 
-                // Load the truck picture
-                truckPictureContainer.innerHTML = `<img src="${truck.image}" alt="${truck.name}" class="truck-picture">`;
+                // Load the truck media (image or video)
+                if (truck.media.type === 'image') {
+                    truckPictureContainer.innerHTML = `<img src="${truck.media.src}" alt="${truck.name}" class="truck-picture">`;
+                } else if (truck.media.type === 'video') {
+                    truckPictureContainer.innerHTML = `
+                        <video controls class="truck-video">
+                            <source src="${truck.media.src}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>`;
+                }
 
                 // Load the truck table
                 let tableHTML = '<table class="truck-table"><tr><th>Feature</th><th>Value</th></tr>';
@@ -36,6 +44,11 @@ fetch('content.json')
                 truckDescriptionContainer.innerHTML = `<p class="truck-description">${truck.description}</p>`;
             });
             navbar.appendChild(button);
+
+            // Automatically select the first truck
+            if (index === 0) {
+                button.click();
+            }
         });
     })
     .catch(error => console.error('Error loading content.json:', error));

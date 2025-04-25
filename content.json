@@ -3,7 +3,10 @@
     {
       "name": "Ford F-150",
       "description": "The Ford F-150 is a versatile and powerful truck built for tough jobs.",
-      "image": "images/Ford.jpg",
+      "media": {
+        "type": "image",
+        "src": "media/Ford.jpg"
+      },
       "features": {
         "Engine": "3.5L V6",
         "Horsepower": "400 HP",
@@ -13,7 +16,10 @@
     {
       "name": "Chevrolet Silverado",
       "description": "The Chevrolet Silverado combines strength and reliability for any task.",
-      "image": "images/Chevy.jpg",
+      "media": {
+        "type": "image",
+        "src": "media/Chevy.jpg"
+      },
       "features": {
         "Engine": "5.3L V8",
         "Horsepower": "355 HP",
@@ -23,7 +29,10 @@
     {
       "name": "Ram 1500",
       "description": "The Ram 1500 is known for its smooth ride and high-quality interior.",
-      "image": "images/Ram.jpg",
+      "media": {
+        "type": "video",
+        "src": "media/example_vid.mp4"
+      },
       "features": {
         "Engine": "5.7L V8",
         "Horsepower": "395 HP",
@@ -31,19 +40,12 @@
       }
     },
     {
-      "name": "Toyota Tundra",
-      "description": "The Toyota Tundra is a reliable truck with a strong reputation for durability.",
-      "image": "images/Toyota.jpg",
-      "features": {
-        "Engine": "5.7L V8",
-        "Horsepower": "381 HP",
-        "Towing Capacity": "10,200 lbs"
-      }
-    },
-    {
       "name": "Nissan Titan",
       "description": "The Nissan Titan offers a powerful engine and a comfortable ride.",
-      "image": "images/Nissan.jpg",
+      "media": {
+        "type": "image",
+        "src": "media/Nissan.jpg"
+      },
       "features": {
         "Engine": "5.6L V8",
         "Horsepower": "400 HP",
@@ -53,7 +55,10 @@
     {
       "name": "GMC Sierra",
       "description": "The GMC Sierra is a premium truck with advanced technology and luxury features.",
-      "image": "images/GMC.jpg",
+      "media": {
+        "type": "image",
+        "src": "media/GMC.jpg"
+      },
       "features": {
         "Engine": "6.2L V8",
         "Horsepower": "420 HP",
