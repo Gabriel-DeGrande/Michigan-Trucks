@@ -1,13 +1,13 @@
 {
   "trucks": [
     {
-      "name": "Ford F-150",
-      "description": "The Ford F-150 is a versatile and powerful truck built for tough jobs.",
+      "name": "Ford Black Widow",
+      "description": "The Ford Widow is a versatile and powerful truck built for tough jobs.",
       "image": "images/Ford.jpg",
       "features": {
-        "Engine": "3.5L V6",
-        "Horsepower": "400 HP",
-        "Towing Capacity": "14,000 lbs"
+        "Engine": "5.0-liter Coyote V8",
+        "Horsepower": "710 HP",
+        "Torque": "650 lb-ft"
       }
     },
     {
@@ -17,7 +17,7 @@
       "features": {
         "Engine": "5.3L V8",
         "Horsepower": "355 HP",
-        "Towing Capacity": "13,300 lbs"
+        "Torque": "495 lb-ft"
       }
     },
     {
@@ -26,18 +26,18 @@
       "image": "images/Ram.jpg",
       "features": {
         "Engine": "5.7L V8",
-        "Horsepower": "395 HP",
-        "Towing Capacity": "12,750 lbs"
+        "Horsepower": "410 HP",
+        "Torque": "410 lb-ft"
       }
     },
     {
-      "name": "Toyota Tundra",
-      "description": "The Toyota Tundra is a reliable truck with a strong reputation for durability.",
+      "name": "Toyota Tacoma",
+      "description": "The Toyota Tacoma is a reliable truck with a strong reputation for durability.",
       "image": "images/Toyota.jpg",
       "features": {
         "Engine": "5.7L V8",
-        "Horsepower": "381 HP",
-        "Towing Capacity": "10,200 lbs"
+        "Horsepower": "278 HP",
+        "Torque": "317 lb-ft"
       }
     },
     {
@@ -47,7 +47,7 @@
       "features": {
         "Engine": "5.6L V8",
         "Horsepower": "400 HP",
-        "Towing Capacity": "9,660 lbs"
+        "Torque": "413 lb-ft"
       }
     },
     {
@@ -55,9 +55,9 @@
       "description": "The GMC Sierra is a premium truck with advanced technology and luxury features.",
       "image": "images/GMC.jpg",
       "features": {
-        "Engine": "6.2L V8",
-        "Horsepower": "420 HP",
-        "Towing Capacity": "11,800 lbs"
+        "Engine": "5.3-liter V8 EcoTec3",
+        "Horsepower": "355 HP",
+        "Torque": "383 lb-ft"
       }
     }
   ]
