@@ -2,7 +2,7 @@
   "trucks": [
     {
       "name": "Ford Black Widow",
-      "description": "The Ford Widow is a versatile and powerful truck built for tough jobs.",
+      "description": "The Ford Black Widow is a versatile and powerful truck built for tough jobs.",
       "media": {
         "type": "image",
         "src": "media/Ford.jpg"
@@ -42,7 +42,10 @@
     {
       "name": "Toyota Tacoma",
       "description": "The Toyota Tacoma is a reliable truck with a strong reputation for durability.",
-      "image": "images/Toyota.jpg",
+      "media": {
+        "type": "image",
+        "src": "media/Toyota.jpg"
+      },
       "features": {
         "Engine": "5.7L V8",
         "Horsepower": "278 HP",
