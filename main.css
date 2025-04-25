@@ -1,3 +1,4 @@
+/* General styles for the entire document */
 html,
 body {
   font-family: sans-serif;
@@ -9,6 +10,7 @@ body {
   flex-direction: column;
 }
 
+/* Styles for the header section */
 header {
   background-color: #00274C;
   color: #fff;
@@ -16,10 +18,12 @@ header {
   text-align: center;
 }
 
+/* Main content area styles */
 main {
   flex: 1;
 }
 
+/* Styles for the contact form */
 .contact-form {
   max-width: 400px;
   background-color: #fff;
@@ -29,6 +33,7 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Dynamic navbar styles */
 #dynamic-navbar {
   display: flex;
   justify-content: center;
@@ -36,6 +41,7 @@ main {
   padding: 10px;
 }
 
+/* Styles for navigation buttons */
 .nav-button {
   background-color: #0051a2;
   color: white;
@@ -51,6 +57,7 @@ main {
   background-color: #217aff;
 }
 
+/* Input and textarea field styles */
 input,
 textarea {
   width: 100%;
@@ -59,6 +66,7 @@ textarea {
   border-radius: 4px;
 }
 
+/* Submit button styles */
 input[type="submit"] {
   background-color: #00274C;
   color: #fff;
@@ -70,15 +78,16 @@ input[type="submit"]:hover {
   background-color: #0051a2;
 }
 
+/* Footer section styles */
 footer {
   background-color: #00274C;
   color: #ffffff;
   text-align: center;
   padding: 20px;
   margin-top: auto;
-  /* Push footer to the bottom */
 }
 
+/* Styles for headings */
 h2 {
   font-size: 2em;
   color: #01264b;
@@ -89,6 +98,7 @@ h2 {
   letter-spacing: 1px;
 }
 
+/* Footer text and link styles */
 #footer-text {
   color: #cccccc;
 }
@@ -103,99 +113,65 @@ h2 {
   text-decoration: underline;
 }
 
-/* Truck picture styles */
+/* Styles for truck images */
 .truck-picture {
   max-width: 100%;
-  /* Ensure the image doesn't exceed the container width */
   max-height: 400px;
-  /* Limit the height of the image */
   width: auto;
-  /* Maintain aspect ratio */
   height: auto;
-  /* Maintain aspect ratio */
   display: block;
   margin: 20px auto;
   border: 2px solid #ddd;
-  /* Optional: Add a border around the image */
   border-radius: 8px;
-  /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Optional: Add a shadow for better appearance */
 }
 
-/* Truck table styles */
+/* Styles for the truck details table */
 .truck-table {
   width: 80%;
-  /* Limit the table width to 80% of the container */
   max-width: 800px;
-  /* Set a maximum width for the table */
   margin: 20px auto;
-  /* Center the table horizontally */
   border-collapse: collapse;
   background-color: #ffffff;
-  /* Add a white background to make it stand out */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Add a subtle shadow for depth */
   border-radius: 8px;
-  /* Add rounded corners */
   overflow: hidden;
-  /* Ensure rounded corners apply to the table */
+  table-layout: fixed; /* Ensures columns have fixed widths */
 }
 
 .truck-table th,
 .truck-table td {
   border: 1px solid #ddd;
   padding: 12px;
-  /* Increase padding for better readability */
   text-align: left;
   font-size: 1em;
-  /* Ensure consistent font size */
+  word-wrap: break-word; /* Ensures text wraps within the cell */
 }
 
 .truck-table th {
   background-color: #0051a2;
-  /* Darker blue for the header */
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  /* Make header text uppercase */
+  width: 50%; /* Ensures equal column widths */
 }
 
-.truck-table td {
-  background-color: #f9f9f9;
-  /* Light grey for table rows */
-}
-
-.truck-table tr:nth-child(even) td {
-  background-color: #e6f2ff;
-  /* Slightly darker shade for alternating rows */
-}
-
-/* Truck description styles */
+/* Styles for the truck description section */
 .truck-description {
   font-size: 1.5em;
-  /* Increase font size for prominence */
   margin: 20px auto;
   text-align: center;
   font-weight: bold;
-  /* Make the text bold */
   color: #00274C;
-  /* Use a dark blue color for emphasis */
   max-width: 800px;
-  /* Limit the width for better readability */
   line-height: 1.6;
-  /* Add line spacing for better readability */
   background-color: #f0f8ff;
-  /* Light blue background for contrast */
   padding: 20px;
-  /* Add padding around the text */
   border-radius: 8px;
-  /* Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Add a subtle shadow */
 }
 
-/* Highlight the active navigation button */
+/* Active state styles for navigation buttons */
 .nav-button.active {
   background-color: #217aff;
   color: #ffffff;
@@ -203,18 +179,13 @@ h2 {
   border: 2px solid #0051a2;
 }
 
-/* Truck video styles */
+/* Styles for truck videos */
 .truck-video {
   max-width: 100%;
-  /* Ensure the video doesn't exceed the container width */
   max-height: 400px;
-  /* Limit the height of the video */
   display: block;
   margin: 20px auto;
   border: 2px solid #ddd;
-  /* Optional: Add a border around the video */
   border-radius: 8px;
-  /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Optional: Add a shadow for better appearance */
 }
