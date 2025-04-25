@@ -1,0 +1,64 @@
+{
+  "trucks": [
+    {
+      "name": "Ford",
+      "description": "Ford trucks are built tough for Michigan roads.",
+      "image": "../images/Ford.jpg",
+      "models": [
+        { "name": "Ford F-150", "engine": "3.5L V6" },
+        { "name": "Ford Ranger", "engine": "2.3L Turbo I4" },
+        { "name": "Ford Super Duty F-250", "engine": "6.7L V8 Power Stroke Diesel" }
+      ]
+    },
+    {
+      "name": "Chevy",
+      "description": "Chevy trucks are reliable and mod-friendly.",
+      "image": "../images/Chevy.jpg",
+      "models": [
+        { "name": "Chevy 1500", "engine": "4.3L EcoTec3 V6" },
+        { "name": "Chevy Colorado", "engine": "2.7L 4-cylinder" },
+        { "name": "Silverado EV", "engine": "Electric powertrain" }
+      ]
+    },
+    {
+      "name": "Ram",
+      "description": "Ram trucks are loud and powerful.",
+      "image": "../images/Ram.jpg",
+      "models": [
+        { "name": "Ram 1500", "engine": "3.5L V6" },
+        { "name": "Ram 2500", "engine": "6.4L HEMI V8" },
+        { "name": "Ram 3500", "engine": "6.7L Cummins Turbo Diesel" }
+      ]
+    },
+    {
+      "name": "GMC",
+      "description": "GMC trucks are stylish and durable.",
+      "image": "../images/GMC.jpg",
+      "models": [
+        { "name": "GMC Sierra 1500", "engine": "5.3L V8" },
+        { "name": "GMC Canyon", "engine": "2.8L Duramax Diesel" },
+        { "name": "GMC Sierra HD", "engine": "6.6L Duramax Diesel" }
+      ]
+    },
+    {
+      "name": "Nissan",
+      "description": "Nissan trucks are versatile and efficient.",
+      "image": "../images/Nissan.jpg",
+      "models": [
+        { "name": "Nissan Frontier", "engine": "3.8L V6" },
+        { "name": "Nissan Titan", "engine": "5.6L V8" },
+        { "name": "Nissan Titan XD", "engine": "5.0L Cummins Diesel" }
+      ]
+    },
+    {
+      "name": "Toyota",
+      "description": "Toyota trucks are reliable and rugged.",
+      "image": "../images/Toyota.jpg",
+      "models": [
+        { "name": "Toyota Tacoma", "engine": "3.5L V6" },
+        { "name": "Toyota Tundra", "engine": "5.7L V8" },
+        { "name": "Toyota Hilux", "engine": "2.8L Turbo Diesel" }
+      ]
+    }
+  ]
+}
