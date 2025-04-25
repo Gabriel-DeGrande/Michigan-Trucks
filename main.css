@@ -106,10 +106,15 @@ h2 {
 
 /* Truck picture styles */
 .truck-picture {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 400px; /* Limit the height of the image */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
   display: block;
   margin: 20px auto;
+  border: 2px solid #ddd; /* Optional: Add a border around the image */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better appearance */
 }
 
 /* Truck table styles */
@@ -117,22 +122,53 @@ h2 {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
+  background-color: #ffffff; /* Add a white background to make it stand out */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  border-radius: 8px; /* Add rounded corners */
+  overflow: hidden; /* Ensure rounded corners apply to the table */
 }
 
 .truck-table th, .truck-table td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 12px; /* Increase padding for better readability */
   text-align: left;
+  font-size: 1em; /* Ensure consistent font size */
 }
 
 .truck-table th {
-  background-color: #00274C;
+  background-color: #0051a2; /* Darker blue for the header */
   color: white;
+  font-weight: bold;
+  text-transform: uppercase; /* Make header text uppercase */
+}
+
+.truck-table td {
+  background-color: #f9f9f9; /* Light grey for table rows */
+}
+
+.truck-table tr:nth-child(even) td {
+  background-color: #e6f2ff; /* Slightly darker shade for alternating rows */
 }
 
 /* Truck description styles */
 .truck-description {
-  font-size: 1.2em;
-  margin: 20px;
+  font-size: 1.5em; /* Increase font size for prominence */
+  margin: 20px auto;
   text-align: center;
+  font-weight: bold; /* Make the text bold */
+  color: #00274C; /* Use a dark blue color for emphasis */
+  max-width: 800px; /* Limit the width for better readability */
+  line-height: 1.6; /* Add line spacing for better readability */
+  background-color: #f0f8ff; /* Light blue background for contrast */
+  padding: 20px; /* Add padding around the text */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Highlight the active navigation button */
+.nav-button.active {
+  background-color: #217aff;
+  color: #ffffff;
+  font-weight: bold;
+  border: 2px solid #0051a2;
 }

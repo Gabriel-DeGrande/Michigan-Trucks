@@ -6,6 +6,7 @@ fetch('content.json')
         const truckPictureContainer = document.getElementById('truck-picture-container');
         const truckTableContainer = document.getElementById('truck-table-container');
         const truckDescriptionContainer = document.getElementById('truck-description-container');
+        let activeButton = null; // Track the currently active button
 
         // Create navigation buttons
         data.trucks.forEach(truck => {
@@ -13,6 +14,13 @@ fetch('content.json')
             button.textContent = truck.name;
             button.className = 'nav-button';
             button.addEventListener('click', () => {
+                // Highlight the selected button
+                if (activeButton) {
+                    activeButton.classList.remove('active');
+                }
+                button.classList.add('active');
+                activeButton = button;
+
                 // Load the truck picture
                 truckPictureContainer.innerHTML = `<img src="${truck.image}" alt="${truck.name}" class="truck-picture">`;
 
