@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font-family: sans-serif;
   background-color: #217aff;
   color: #000000;
@@ -51,7 +52,8 @@ main {
   background-color: #217aff;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -74,7 +76,8 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 20px;
-  margin-top: auto; /* Push footer to the bottom */
+  margin-top: auto;
+  /* Push footer to the bottom */
 }
 
 h2 {
@@ -95,7 +98,41 @@ h2 {
   color: #cccccc;
   text-decoration: none;
 }
+
 #footer-text a:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+
+/* Truck picture styles */
+.truck-picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Truck table styles */
+.truck-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.truck-table th, .truck-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.truck-table th {
+  background-color: #00274C;
+  color: white;
+}
+
+/* Truck description styles */
+.truck-description {
+  font-size: 1.2em;
+  margin: 20px;
+  text-align: center;
 }

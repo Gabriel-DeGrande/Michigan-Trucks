@@ -1,19 +1,33 @@
 // Fetch the content.json file and dynamically create the navigation bar
 fetch('content.json')
-  .then(response => response.json())
-  .then(data => {
-    const navbar = document.getElementById('dynamic-navbar');
-    const truckBrands = data.trucks.map(truck => truck.name);
+    .then(response => response.json())
+    .then(data => {
+        const navbar = document.getElementById('dynamic-navbar');
+        const truckPictureContainer = document.getElementById('truck-picture-container');
+        const truckTableContainer = document.getElementById('truck-table-container');
+        const truckDescriptionContainer = document.getElementById('truck-description-container');
 
-    // Create navigation buttons
-    truckBrands.forEach(brand => {
-      const button = document.createElement('button');
-      button.textContent = brand;
-      button.className = 'nav-button';
-      button.addEventListener('click', () => {
-        alert(`You clicked on ${brand}`);
-      });
-      navbar.appendChild(button);
-    });
-  })
-  .catch(error => console.error('Error loading content.json:', error));
+        // Create navigation buttons
+        data.trucks.forEach(truck => {
+            const button = document.createElement('button');
+            button.textContent = truck.name;
+            button.className = 'nav-button';
+            button.addEventListener('click', () => {
+                // Load the truck picture
+                truckPictureContainer.innerHTML = `<img src="${truck.image}" alt="${truck.name}" class="truck-picture">`;
+
+                // Load the truck table
+                let tableHTML = '<table class="truck-table"><tr><th>Feature</th><th>Value</th></tr>';
+                for (const [key, value] of Object.entries(truck.features)) {
+                    tableHTML += `<tr><td>${key}</td><td>${value}</td></tr>`;
+                }
+                tableHTML += '</table>';
+                truckTableContainer.innerHTML = tableHTML;
+
+                // Load the truck description
+                truckDescriptionContainer.innerHTML = `<p class="truck-description">${truck.description}</p>`;
+            });
+            navbar.appendChild(button);
+        });
+    })
+    .catch(error => console.error('Error loading content.json:', error));
