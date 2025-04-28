@@ -2,7 +2,7 @@
   "trucks": [
     {
       "name": "Ford Black Widow",
-      "description": "The Ford Black Widow is a versatile and powerful truck built for tough jobs.",
+      "description": "The Ford Black Widow is a powerful truck. Trucks feature a 6-inch suspension lift, FOX shocks, and custom interior and exterior details. This is perfect for the Michigan unpredictable weather which looking sweet.",
       "media": {
         "type": "image",
         "src": "media/Ford.jpg"
@@ -15,7 +15,7 @@
     },
     {
       "name": "Chevrolet Silverado",
-      "description": "The Chevrolet Silverado combines strength and reliability for any task.",
+      "description": "The Chevrolet Silverado is a full-size pickup truck renowned for its robust performance, advanced technology, and versatility, making it a popular choice among Michigan drivers.",
       "media": {
         "type": "image",
         "src": "media/Chevy.jpg"
@@ -28,10 +28,10 @@
     },
     {
       "name": "Ram 1500",
-      "description": "The Ram 1500 is known for its smooth ride and high-quality interior.",
+      "description": "The Ram 1500 is a powerful truck it was made for the michigan weather built for the snow, rain, anything you throw at it the truck will power throgh. It is also a naturally loud truck and michigan people love there loud trucks.",
       "media": {
         "type": "video",
-        "src": "media/example_vid.mp4"
+        "src": "media/Ramvideo.mp4"
       },
       "features": {
         "Engine": "5.7L V8",
@@ -41,7 +41,7 @@
     },
     {
       "name": "Toyota Tacoma",
-      "description": "The Toyota Tacoma is a reliable truck with a strong reputation for durability.",
+      "description": "The Toyota Tacoma one of my favorite trucks not only for the look of them but for how they drive and have they handle in all types of weather. Plus it is the best looking truck in the state of michigan.",
       "media": {
         "type": "image",
         "src": "media/Toyota.jpg"
@@ -54,7 +54,7 @@
     },
     {
       "name": "Nissan Titan",
-      "description": "The Nissan Titan offers a powerful engine and a comfortable ride.",
+      "description": "The Nissan Titan a full-size truck made for the heavy loads, and a powerful truck. The Titan caters to both work and leisure needs.",
       "media": {
         "type": "image",
         "src": "media/Nissan.jpg"
@@ -67,7 +67,7 @@
     },
     {
       "name": "GMC Sierra",
-      "description": "The GMC Sierra is a premium truck with advanced technology and luxury features.",
+      "description": "The GMC Sierra is a Michigan made truck made here in the U.S. that is why it is so popular with the Michigan people.",
       "media": {
         "type": "image",
         "src": "media/GMC.jpg"
